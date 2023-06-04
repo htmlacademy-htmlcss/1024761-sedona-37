@@ -4,9 +4,154 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <nav class="novigation">
+        <ul class="novigation-list">
+          <li class="novigation-item">
+            <a href="index.html" class="logo"><img src="#" alt="Логотип"></a>
+          </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+          <li class="novigation-item">
+            <a href="index.html" class="novigation-link novigation-link-current">Главная</a>
+          </li>
 
+          <li class="novigation-item">
+            <a href="about.html" class="novigation-link">О Седоне</a>
+          </li>
+
+          <li class="novigation-item">
+            <a href="catalog.html" class="novigation-link">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="novigation-list novigation-user">
+          <li class="novigation-item">
+            <a href="#" class="novigation-link"><span class="visually-hidden">Поиск</span></a>
+          </li>
+
+          <li class="novigation-item">
+            <a href="#" class="novigation-link"> <span class="visually-hidden">В избранное</span></a>
+          </li>
+
+          <li class="novigation-item">
+            <a href="#" class="novigation-link">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Город Седона</h1>
+        <img src="#" alt="Надпись Welcome">
+        <img src="#" alt="Логотип Седона">
+      </section>
+
+      <section class="advantages">
+        <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages-describe">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Настоящий городок</h3>
+            <p class="advantages-item-describe">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="#" alt="Вид на веранду">
+          </li>
+
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Небольшая площадь</h3>
+            <p class="advantages-item-describe">Все достопримечательности находятся очень близко</p>
+          </li>
+
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Красивая дорога</h3>
+            <p class="advantages-item-describe">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Мало туристов</h3>
+            <p class="advantages-item-describe">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+            <p class="advantages-item-describe">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="#" alt="Вид на каньон">
+          </li>
+        </ul>
+      </section>
+
+      <section class="relax">
+        <h2 class="relax-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="relax-title-description">Опытный персонал и качественное обслуживание!</p>
+
+        <ul class="relax-list">
+          <li class="relax-item">
+            <h3 class="relax-list-title">Жильё</h3>
+            <p class="relax-list-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <img class="icon" src="#" alt="Иконка домика">
+          </li>
+
+          <li class="relax-item">
+            <h3 class="relax-list-title">Еда</h3>
+            <p class="relax-list-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <img class="icon" src="#" alt="Иконка бургера">
+          </li>
+
+          <li class="relax-item">
+            <h3 class="relax-list-title">Сувениры</h3>
+            <p class="relax-list-description">Не только китайского, но и настоящего местного производства!</p>
+            <img class="icon" src="#" alt="Иконка коробки">
+          </li>
+        </ul>
+      </section>
+
+      <section class="search">
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-title-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+
+      <article class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="appointment-date" placeholder="Ваш e-mail">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="icon" href="https://vk.com/htmlacademy"></a>
+            <span class="visually-hidden">Вконтакте</span>
+          </li>
+
+          <li class="footer-social-item">
+           <a class="icon" href="https://t.me/htmlacademy"></a>
+           <span class="visually-hidden">Телеграм</span>
+          </li>
+
+          <li class="footer-social-item">
+           <a class="icon" href="https://www.youtube.com/user/htmlacademyru"></a>
+           <span class="visually-hidden">Ютуб</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts">
+        <a class="contact-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+      </div>
+
+      <div class="create">
+        <p>.html academy</p>
+      </div>
+    </footer>
   </body>
+
+
 </html>
