@@ -10,7 +10,7 @@
       <nav class="novigation">
         <ul class="novigation-list">
           <li class="novigation-item">
-            <a href="index.html" class="logo"><img src="index.html" alt="Логотип"></a>
+            <a href="index.html" class="logo"><img src="#" alt="Логотип"></a>
           </li>
 
           <li class="novigation-item">
@@ -98,14 +98,16 @@
             </ul>
           </fieldset>
 
+          </form>
+
           <span class="costs">Стоимость, P:</span>
 
           <form>
-            <input type="input" placeholder="от">
+            <input type="text" placeholder="от">
           </form>
 
           <form>
-            <input type="input" placeholder="до">
+            <input type="text" placeholder="до">
           </form>
 
 
@@ -114,7 +116,7 @@
 
           <button class="button" type="submit">Сбросить</button>
 
-          </form>
+
 
         </section>
 
@@ -138,7 +140,7 @@
                <span class="visually-hidden">Показать список</span>
               </a>
 
-              <ul class="hotel-list">
+            <ul class="hotel-list">
 
               <li class="hotel-item">
                 <a class="hotel-link" href="hotels.html">
@@ -150,7 +152,7 @@
                  <a class="butten" href="#">Подробнее</a>
                  <a class="butten" href="#">В избранное </a>
                  <span class="rating">Рейтинг 8,5</span>
-            </li>
+              </li>
 
               <li class="hotel-item">
                 <a class="hotel-link" href="hotels.html">
@@ -162,7 +164,7 @@
                  <a class="butten" href="#">Подробнее</a>
                  <a class="butten" href="#">В избранное </a>
                  <span class="rating">Рейтинг 9,2</span>
-            </li>
+              </li>
 
 
               <li class="hotel-item">
@@ -175,8 +177,7 @@
                  <a class="butten" href="#">Подробнее</a>
                  <a class="butten" href="#">В избранное </a>
                  <span class="rating">Рейтинг 6,9</span>
-            </li>
-
+              </li>
 
               <li class="hotel-item">
                 <a class="hotel-link" href="hotels.html">
@@ -188,7 +189,8 @@
                  <a class="butten" href="#">Подробнее</a>
                  <a class="butten" href="#">В избранное </a>
                  <span class="rating">Рейтинг 5</span>
-            </li>
+              </li>
+            </ul>
 
             <ul class="pogination">
               <li class="pogination-item">
@@ -218,47 +220,43 @@
 
         </section>
 
-      <article class="subscribe">
-        <h3 class="visually-hidden">Подписка</h3>
-        <span>Подпишитесь на рассылку</span>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <article class="subscribe">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="text" name="appointment-date" placeholder="Ваш e-mail">
+            <button class="button" type="submit">Подписаться</button>
+          </form>
+        </article>
+      </main>
 
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" name="appointment-date" placeholder="Ваш e-mail">
-
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-      </article>
-   </main>
-
-    <footer class="page-footer">
-        <section class="social">
+      <footer class="page-footer">
+        <div class="social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-             <a class="button" href="thhps://vk.com/htmlacademy"></a>
-             <span class="visually-hidden">Вконтакте</span>
+              <a class="icon" href="https://vk.com/htmlacademy"></a>
+              <span class="visually-hidden">Вконтакте</span>
             </li>
 
             <li class="footer-social-item">
-             <a class="button" href="thhps://t.me/htmlacademy"></a>
+             <a class="icon" href="https://t.me/htmlacademy"></a>
              <span class="visually-hidden">Телеграм</span>
             </li>
 
             <li class="footer-social-item">
-             <a class="button" href="thhps://www.youtube.com/user/htmlacademyru"></a>
+             <a class="icon" href="https://www.youtube.com/user/htmlacademyru"></a>
              <span class="visually-hidden">Ютуб</span>
             </li>
           </ul>
+        </div>
 
-        </section>
-
-        <section class="contacts">
+        <div class="contacts">
           <a class="contact-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-        </section>
+        </div>
 
-        <section class="host">
+        <div class="create">
           <p>.html academy</p>
-        </section>
+        </div>
       </footer>
     </body>
 
