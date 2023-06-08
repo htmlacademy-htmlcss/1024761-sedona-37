@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -10,7 +11,7 @@
       <nav class="novigation">
         <ul class="novigation-list">
           <li class="novigation-item">
-            <a href="index.html" class="logo"><img src="#" alt="Логотип"></a>
+            <a href="index.html" class="logo"><img src="images/main-logo.svg" width="140" height="70" alt="Логотип."></a>
           </li>
 
           <li class="novigation-item">
@@ -28,11 +29,16 @@
 
         <ul class="novigation-list novigation-user">
           <li class="novigation-item">
-            <a href="#" class="novigation-link"> <span class="visually-hidden">Поиск</span></a>
+            <a href="#" class="novigation-link"> <span class="visually-hidden">Поиск</span>
+              <img class="novigation-link-icon" src="images/icon-search.svg" width="20" height="22" alt="">
+            </a>
           </li>
 
           <li class="novigation-item">
-            <a href="#" class="novigation-link"> <span class="visually-hidden">В избранное</span></a>
+            <a href="#" class="novigation-link"> <span class="visually-hidden">В избранное</span>
+              <img class="novigation-link-icon" src="images/icon-heart.svg" width="18" height="17" alt="">
+            </a>
+            <span class="heart">12</span>
           </li>
 
           <li class="novigation-item">
@@ -47,7 +53,13 @@
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <img class="breadcrumbs-item-icon" src="images/breadcrumbs-hause.svg" width="12" height="12" alt="Главная">
+            </a>
+          </li>
+
+          <li class="breadcrumbs-item">
+            <img class="breadcrumbs-item-icon" src="images/breadcrumbs-arrow.svg" width="6" height="10" alt="Путь">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Каталог</a>
@@ -113,7 +125,7 @@
         </form>
 
         <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button" type="reset">Сбросить</button>
       </section>
 
       <section class="catalog">
@@ -124,64 +136,67 @@
         </select>
 
         <a href="#" class="button button-current">
-          <span class="visually-hidden">Показать карточки</span>
+          <span class="visually-hidden">Показать карточками</span>
+          <img class="button-icon" src="images/tiles.svg" width="16" height="14" alt="Показать карточками.">
         </a>
 
         <a href="#" class="button">
-          <span class="visually-hidden">Показать большие карточки</span>
+          <span class="visually-hidden">Показать большими карточками</span>
+          <img class="button-icon" src="images/big-tiles.svg" width="16" height="14" alt="Показать большими карточками.">
         </a>
 
         <a href="#" class="button">
-          <span class="visually-hidden">Показать список</span>
+          <span class="visually-hidden">Показать списком</span>
+          <img class="button-icon" src="images/list.svg" width="16" height="14" alt="Показать списком.">
         </a>
 
         <ul class="hotel-list">
           <li class="hotel-item">
             <a class="hotel-link" href="#">
-              <img class="hotel-imeg" src="#" alt="Вид на звездное небо">
+              <img class="hotel-imag" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Вид на звездное небо сквозь скалы.">
               <h3 class="hotel-title">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-object">Гостиница</p>
             <b>от 4000 р</b>
-            <a class="butten" href="#">Подробнее</a>
-            <a class="butten" href="#">В избранное </a>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное </a>
             <span class="rating">Рейтинг 8,5</span>
           </li>
 
           <li class="hotel-item">
             <a class="hotel-link" href="#">
-              <img class="hotel-imeg" src="#" alt="Вид на облачное небо">
+              <img class="hotel-imag" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Ночное сияние в небе.">
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-object">Гостиница</p>
             <b>от 4000 р</b>
-            <a class="butten" href="#">Подробнее</a>
-            <a class="butten" href="#">В избранное</a>
-            <span class="rating">Рейтинг 9,2</span>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное</a>
+            <p class="rating">Рейтинг 9,2</p>
           </li>
 
           <li class="hotel-item">
             <a class="hotel-link" href="#">
-              <img class="hotel-imeg" src="#" alt="Вид на скалу">
+              <img class="hotel-imag" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Большая каменная гора на фоне голубого неба.">
               <h3 class="hotel-title">Desert Quail Inn</h3>
             </a>
             <p class="hotel-object">Гостиница</p>
             <b>от 2500 р</b>
-            <a class="butten" href="#">Подробнее</a>
-            <a class="butten" href="#">В избранное </a>
-            <span class="rating">Рейтинг 6,9</span>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное </a>
+            <p class="rating">Рейтинг 6,9</p>
           </li>
 
           <li class="hotel-item">
             <a class="hotel-link" href="#">
-              <img class="hotel-imeg" src="#" alt="Вид на скалу ночью">
+              <img class="hotel-imag" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Утес в предрассветное время.">
               <h3 class="hotel-title">GreenTree Inn</h3>
             </a>
             <p class="hotel-object">Гостиница</p>
             <b>от 1500 р</b>
-            <a class="butten" href="#">Подробнее</a>
-            <a class="butten" href="#">В избранное </a>
-            <span class="rating">Рейтинг 5</span>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное </a>
+            <p class="rating">Рейтинг 5</p>
           </li>
         </ul>
 
@@ -227,18 +242,21 @@
       <div class="social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="icon" href="https://vk.com/htmlacademy"></a>
-            <span class="visually-hidden">Вконтакте</span>
+            <a class="icon" href="https://vk.com/htmlacademy">
+              <img class="social-item-icon" src="images/social-wk.svg" width="24" height="14" alt="Вконтакте">
+            </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="icon" href="https://t.me/htmlacademy"></a>
-            <span class="visually-hidden">Телеграм</span>
+            <a class="icon" href="https://t.me/htmlacademy">
+              <img class="social-item-icon" src="images/social-telegram.svg" width="18" height="15" alt="Телеграм">
+            </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="icon" href="https://www.youtube.com/user/htmlacademyru"></a>
-            <span class="visually-hidden">Ютуб</span>
+            <a class="icon" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social-item-icon" src="images/social-youtube.svg" width="22" height="17" alt="Ютуб.">
+            </a>
           </li>
         </ul>
       </div>
@@ -248,7 +266,9 @@
       </div>
 
       <div class="create">
-        <p>.html academy</p>
+        <a href="https://htmlacademy.ru">
+          <img class="create-icon" src="images/logo-html.svg" width="115" height="33" alt="Разработано html academy.">
+        </a>
       </div>
     </footer>
   </body>
