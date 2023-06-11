@@ -101,5 +101,11 @@ h2.title-h2 {
 
 .search {
   text-align: center;
-
+}
+.contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
 }
