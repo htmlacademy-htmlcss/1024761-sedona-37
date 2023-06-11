@@ -15,35 +15,6 @@
     font-display: swap;
   }
 
-/*
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-    font-display: swap;
-  }
-
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-    font-display: swap;
-  }
-
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-    font-display: swap;
-  }
-*/
-
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -66,7 +37,7 @@ body {
   text-align: center;
 }
 
-/*Почему картинка не появляется снизу с фражком?*/
+/*Почему картинка без фражка?*/
 .hero {
   background-image: url(../images/background-hero.jpg);
   background-repeat: no-repeat;
@@ -118,4 +89,17 @@ h2.title-h2 {
 
 .subscribe-form {
   text-align: center;
+}
+
+.subscribe {
+  background-image: url(../images/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 414px;
+}
+
+.search {
+  text-align: center;
+
 }
