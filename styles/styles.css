@@ -1,3 +1,121 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+/*
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+*/
+
+
 body {
-background-color: aqua;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+}
+
+.novigation-link {
+  line-height: 24px;
+  font-size: 20px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Почему картинка не появляется снизу с фражком?*/
+.hero {
+  background-image: url(../images/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.hero-img {
+ display: block;
+ margin: 0 auto;
+ padding-top: 51px;
+ padding-bottom: 82px;
+}
+
+h2.title-h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.title-h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages-item-describe {
+  line-height: 22px;
+}
+
+.subscribe-description {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-form {
+  text-align: center;
 }
