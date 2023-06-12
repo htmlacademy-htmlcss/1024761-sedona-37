@@ -16,32 +16,34 @@
   }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   margin: 0;
   color: #333333;
   background-color: #FFFFFF;
-}
-
-.page-header {
-  color: #000000;
-}
+  }
 
 .novigation-link {
   line-height: 24px;
   font-size: 20px;
-  color: inherit;
+  color: #000000;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+
 }
 
-/*Почему картинка без фражка?*/
+.heart {
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
 .hero {
   background-image: url(../images/background-hero.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .visually-hidden {
@@ -55,26 +57,32 @@ body {
  padding-bottom: 82px;
 }
 
-h2.title-h2 {
+.title-text {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color:#000000;
 }
 
 .text {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
 }
 
-.title-h3 {
+.advantages-item-describe {
+  line-height: 22px;
+}
+
+.item-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.white-text {
+  color:#ffffff;
 }
 
 .advantages-item-describe {
@@ -94,18 +102,35 @@ h2.title-h2 {
 .subscribe {
   background-image: url(../images/subscribe.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  width: 1200px;
-  height: 414px;
+  background-size: cover;
+  background-position: center bottom;
+  color: #FFFFFF;
 }
 
 .search {
   text-align: center;
 }
+
+
+.subscribe-button {
+  color: white;
+  padding: 8px 50px;
+  background-color: #756157;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .contact-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  display: block;
   text-align: center;
+}
+.subscribe-title {
+  color:#ffffff;
 }
