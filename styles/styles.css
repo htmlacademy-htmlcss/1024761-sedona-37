@@ -32,6 +32,12 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
+  .page-hader {
+    text-align: center;
+    font-weight: 700;
+
+  }
+
 .novigation-link {
   line-height: 24px;
   font-size: 20px;
@@ -141,4 +147,40 @@ body {
 }
 .subscribe-title {
   color:#ffffff;
+}
+
+.catalog-subscribe {
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position: center bottom;
+  color: #000000;
+}
+
+.filter {
+  background-image: url(../images/catalog-filter.jpg);
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.costs {
+  background-image: inherit;
+  margin: 0;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+}
+
+.hotel-link {
+text-decoration: none;
+color: #000000;
 }
