@@ -84,6 +84,7 @@ body {
     padding: 0;
     list-style: none;
     width: 620px;
+
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
@@ -178,6 +179,38 @@ body {
   text-align: center;
 }
 
+.invitation-list-wropper {
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.invitation-item {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.item-hause {
+ background-image: url(../images/icon-hause.svg);
+ background-repeat: no-repeat;
+ background-color: rgba(131, 79, 211, 0.1);
+}
+
+.item-food {
+  background-image: url(../images/icon-food.svg);
+ background-repeat: no-repeat;
+}
+
+.item-gift {
+  background-image: url(../images/icon-gift.svg);
+ background-repeat: no-repeat;
+ background-color: rgba(131, 79, 211, 0.1);
+}
 /*Search*/
 
 .search {
@@ -186,6 +219,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+
 }
 
 .search-button {
@@ -240,13 +274,50 @@ body {
 
 /*Footer*/
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .contact-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  display: block;
+
+}
+
+.social {
+  width: 150px;
+  margin-right: 41px;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
+.contacts {
+  width: 720px;
+  margin-right: 41px;
+  margin: 0 auto;
   text-align: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+
+}
+
+.product {
+  width: 115px;
+  margin-left: auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 
