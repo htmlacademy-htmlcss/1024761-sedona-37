@@ -71,7 +71,10 @@ body {
   }
 
   .logo {
+    display: block;
+    margin: 0 auto;
     margin-right: 30px;
+    width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -367,10 +370,11 @@ body {
 
 /*Hotels-catalog*/
 
-.hotel-catalog-wropper {
+.hotel-catalog-wrapper {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  flex-wrap: wrap;
 
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -386,6 +390,11 @@ body {
 
 }
 
+.hotel-list {
+  padding: 0;
+  margin: 0;
+}
+
 .hotel-title {
   font-weight: 700;
   font-size: 24px;
@@ -397,6 +406,9 @@ body {
   width: 340px;
   list-style: none;
   margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -425,9 +437,10 @@ color: #000000;
 
 }
 
-.pogination-wropper {
+.pogination-wrapper {
   display: flex;
   margin: 0 auto;
+  width: 1060px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -437,7 +450,6 @@ color: #000000;
   text-decoration: none;
   color: #FFFFFF;
   background-color:#82B3D3;
-  padding: 11px 19px 13px 18px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -445,6 +457,8 @@ color: #000000;
 
 .pogination-item {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pogination-link-current {
