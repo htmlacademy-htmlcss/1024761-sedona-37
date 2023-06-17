@@ -73,8 +73,6 @@ body {
   .logo {
     margin-right: 30px;
 
-
-
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 
@@ -147,6 +145,16 @@ body {
 
 /*Advantages*/
 
+.advantages-list {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  padding: 0;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
 .advantages {
   text-align: center;
   font-weight: 400;
@@ -195,6 +203,7 @@ body {
   list-style: none;
 
 
+
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -202,6 +211,10 @@ body {
 .invitation-item {
   max-width: 400px;
   margin: 0;
+  padding: 0;
+}
+
+.invitation-list {
   padding: 0;
 }
 
@@ -353,6 +366,17 @@ body {
 }
 
 /*Hotels-catalog*/
+
+.hotel-catalog-wropper {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .catalog-title {
   font-weight: 700;
   font-size: 30px;
@@ -367,6 +391,15 @@ body {
   font-size: 24px;
   line-height: 28px;
 
+}
+
+.hotel-item {
+  width: 340px;
+  list-style: none;
+  margin-right: 20px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .hotel-link {
@@ -392,6 +425,14 @@ color: #000000;
 
 }
 
+.pogination-wropper {
+  display: flex;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .pogination-link {
   text-decoration: none;
   color: #FFFFFF;
@@ -400,6 +441,10 @@ color: #000000;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.pogination-item {
+  list-style: none;
 }
 
 .pogination-link-current {
