@@ -70,6 +70,16 @@ body {
     color: #000000;
   }
 
+  .logo {
+    margin-right: 30px;
+
+
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+
+  }
+
   .novigation {
     display: flex;
     width: 1200px;
@@ -83,14 +93,14 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 620px;
+    width: 510px;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
   .novigation-user {
-    max-width: 310px;
+    max-width: 270px;
     margin-left: auto;
   }
 
@@ -196,20 +206,20 @@ body {
 }
 
 .item-hause {
- background-image: url(../images/icon-hause.svg);
- background-repeat: no-repeat;
- background-color: rgba(131, 79, 211, 0.1);
+  background-image: url(../images/icon-hause.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
 }
 
 .item-food {
   background-image: url(../images/icon-food.svg);
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .item-gift {
   background-image: url(../images/icon-gift.svg);
- background-repeat: no-repeat;
- background-color: rgba(131, 79, 211, 0.1);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
 }
 /*Search*/
 
@@ -302,7 +312,7 @@ body {
 
 
 .contacts {
-  width: 720px;
+  width: 400px;
   margin-right: 41px;
   margin: 0 auto;
   text-align: center;
