@@ -378,6 +378,7 @@ body {
 .filter {
   background-image: url(../images/catalog-filter.jpg);
   background-repeat: no-repeat;
+  background-color: #000000;
   color: #ffffff;
   background-size: cover;
   font-weight: 400;
