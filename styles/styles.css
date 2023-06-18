@@ -15,6 +15,10 @@
     font-display: swap;
   }
 
+html {
+height: 100%;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -22,7 +26,11 @@ body {
   margin: 0;
   color: #000000;
   background-color: #f2f2f2;
-  max-width: 1280px;
+  height: 100%;
+  }
+
+  .main-index {
+    flex-grow: 1;
   }
 
   .page-container {
@@ -31,6 +39,25 @@ body {
     background-color: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     color: #333333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
        /*Header*/
@@ -43,7 +70,51 @@ body {
     color: #000000;
   }
 
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-right: 30px;
+    width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+
+  }
+
+  .novigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto; /*Надо ли тут писать это свойство? Контейнер и так на всю ширину страницы*/
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .novigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 550px;
+    flex-wrap: wrap;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .novigation-user {
+    width: 350px;
+    margin-left: auto;
+  }
+
+
+  .novigation-user .novigation-link {
+    min-width: 44px;
+    min-height: 64px;
+  }
 .novigation-link {
+  display: block;
+  padding: 16px 20px;
   line-height: 24px;
   font-size: 20px;
   color: #000000;
@@ -52,7 +123,7 @@ body {
   text-align: center;
 }
 
-.heart {
+.novigation-item-heart {
   color: #ffffff;
   background-color: #7DB54F;
 }
@@ -73,11 +144,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  background-color: #000000;
 }
 
-.visually-hidden {
-  display: none;
-}
 
 .hero-img {
  display: block;
@@ -87,6 +156,18 @@ body {
 }
 
 /*Advantages*/
+
+.advantages-list {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 
 .advantages {
   text-align: center;
@@ -100,6 +181,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color:#000000;
+
 }
 
 .item-title {
@@ -120,6 +202,18 @@ body {
   background-color: #82B3D3;
 }
 
+.item-block {
+  display: block;
+  width: 400px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 
 /*Invitation*/
 
@@ -130,6 +224,43 @@ body {
   text-align: center;
 }
 
+.invitation-list-wropper {
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.invitation-item {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.invitation-list {
+  padding: 0;
+}
+
+.item-hause {
+  background-image: url(../images/icon-hause.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
+}
+
+.item-food {
+  background-image: url(../images/icon-food.svg);
+  background-repeat: no-repeat;
+}
+
+.item-gift {
+  background-image: url(../images/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
+}
 /*Search*/
 
 .search {
@@ -138,6 +269,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+
 }
 
 .search-button {
@@ -157,6 +289,7 @@ body {
   background-image: url(../images/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
   background-position: center bottom;
   color: #FFFFFF;
   text-align: center;
@@ -191,13 +324,50 @@ body {
 
 /*Footer*/
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .contact-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  display: block;
+
+}
+
+.social {
+  width: 142px;
+  margin-right: 41px;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
+.contacts {
+  width: 720px;
+  margin-right: 41px;
+  margin: 0 auto;
   text-align: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+
+}
+
+.product {
+  width: 115px;
+  margin-left: auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 
@@ -208,6 +378,7 @@ body {
 .filter {
   background-image: url(../images/catalog-filter.jpg);
   background-repeat: no-repeat;
+  background-color: #000000;
   color: #ffffff;
   background-size: cover;
   font-weight: 400;
@@ -223,6 +394,20 @@ body {
 }
 
 /*Hotels-catalog*/
+
+.hotel-catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .catalog-title {
   font-weight: 700;
   font-size: 30px;
@@ -232,11 +417,30 @@ body {
 
 }
 
+.hotel-list {
+  padding: 0;
+  margin: 0;
+}
+
 .hotel-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 
+}
+
+.hotel-item {
+  display: block;
+  width: 340px;
+  list-style-type: none;
+  margin-right: 20px;
+  align-content: space-between;
+  margin-bottom: 20px;
+  padding: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .hotel-link {
@@ -262,14 +466,28 @@ color: #000000;
 
 }
 
+.pogination-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
 .pogination-link {
   text-decoration: none;
   color: #FFFFFF;
   background-color:#82B3D3;
-  padding: 11px 19px 13px 18px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.pogination-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pogination-link-current {
