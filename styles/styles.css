@@ -83,7 +83,7 @@ body {
 
   .novigation {
     display: flex;
-    width: 1200px;
+    width: 1060px;
     margin: 0 auto; /*Надо ли тут писать это свойство? Контейнер и так на всю ширину страницы*/
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -91,21 +91,30 @@ body {
   }
 
   .novigation-list {
+    display: flex;
     margin: 0;
     padding: 0;
-    list-style: none;
-    width: 510px;
+    list-style-type: none;
+    width: 550px;
+    flex-wrap: wrap;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
   .novigation-user {
-    max-width: 270px;
+    width: 350px;
     margin-left: auto;
   }
 
+
+  .novigation-user .novigation-link {
+    min-width: 44px;
+    min-height: 64px;
+  }
 .novigation-link {
+  display: block;
+  padding: 16px 20px;
   line-height: 24px;
   font-size: 20px;
   color: #000000;
@@ -114,7 +123,7 @@ body {
   text-align: center;
 }
 
-.heart {
+.novigation-item-heart {
   color: #ffffff;
   background-color: #7DB54F;
 }
@@ -151,11 +160,13 @@ body {
 .advantages-list {
   display: flex;
   width: 1200px;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .advantages {
@@ -170,6 +181,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color:#000000;
+
 }
 
 .item-title {
@@ -188,6 +200,18 @@ body {
 .item-white-color {
   color:#ffffff;
   background-color: #82B3D3;
+}
+
+.item-block {
+  display: block;
+  width: 400px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 
@@ -318,7 +342,7 @@ body {
 }
 
 .social {
-  width: 150px;
+  width: 142px;
   margin-right: 41px;
 
 
@@ -328,7 +352,7 @@ body {
 
 
 .contacts {
-  width: 400px;
+  width: 720px;
   margin-right: 41px;
   margin: 0 auto;
   text-align: center;
@@ -372,9 +396,11 @@ body {
 
 .hotel-catalog-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   flex-wrap: wrap;
+
 
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -403,9 +429,11 @@ body {
 }
 
 .hotel-item {
+  display: block;
   width: 340px;
-  list-style: none;
+  list-style-type: none;
   margin-right: 20px;
+  align-content: space-between;
   margin-bottom: 20px;
   padding: 0;
 
