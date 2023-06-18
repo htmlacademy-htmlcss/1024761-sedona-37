@@ -1,0 +1,511 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+html {
+height: 100%;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  color: #000000;
+  background-color: #f2f2f2;
+  height: 100%;
+  }
+
+  .main-index {
+    flex-grow: 1;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #333333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+       /*Header*/
+  .page-hader {
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-right: 30px;
+    width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+
+  }
+
+  .novigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto; /*Надо ли тут писать это свойство? Контейнер и так на всю ширину страницы*/
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .novigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 550px;
+    flex-wrap: wrap;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .novigation-user {
+    width: 350px;
+    margin-left: auto;
+  }
+
+
+  .novigation-user .novigation-link {
+    min-width: 44px;
+    min-height: 64px;
+  }
+.novigation-link {
+  display: block;
+  padding: 16px 20px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.novigation-item-heart {
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.novigation-button {
+  color:#FFFFFF;
+  background-color: #756157;
+  padding: 8px 34px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+  /*Section hero*/
+
+.hero {
+  background-image: url(../images/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: #000000;
+}
+
+
+.hero-img {
+ display: block;
+ margin: 0 auto;
+ padding-top: 51px;
+ padding-bottom: 82px;
+}
+
+/*Advantages*/
+
+.advantages-list {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.advantages {
+  text-align: center;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.title-text {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#000000;
+
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.title-white-color {
+  color:#ffffff;
+  background-color: #82B3D3;
+}
+
+.item-white-color {
+  color:#ffffff;
+  background-color: #82B3D3;
+}
+
+.item-block {
+  display: block;
+  width: 400px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
+/*Invitation*/
+
+.invitation {
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+}
+
+.invitation-list-wropper {
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.invitation-item {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.invitation-list {
+  padding: 0;
+}
+
+.item-hause {
+  background-image: url(../images/icon-hause.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
+}
+
+.item-food {
+  background-image: url(../images/icon-food.svg);
+  background-repeat: no-repeat;
+}
+
+.item-gift {
+  background-image: url(../images/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(131, 79, 211, 0.1);
+}
+/*Search*/
+
+.search {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
+}
+
+.search-button {
+  color: white;
+  padding: 8px 50px;
+  background-color: #756157;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*Subscribe*/
+
+.subscribe {
+  background-image: url(../images/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  background-position: center bottom;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+.subscribe-button {
+  color:#FFFFFF;
+  background-color: #82B3D3;
+  padding: 8px 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+}
+
+.button-reset {
+  font-family: inherit;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.index-subscribe-title {
+  color:#ffffff;
+}
+
+/*Footer*/
+
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.social {
+  width: 142px;
+  margin-right: 41px;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
+.contacts {
+  width: 720px;
+  margin-right: 41px;
+  margin: 0 auto;
+  text-align: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+
+}
+
+.product {
+  width: 115px;
+  margin-left: auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
+/*Catalog-page*/
+
+/*Filter*/
+
+.filter {
+  background-image: url(../images/catalog-filter.jpg);
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: cover;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/*Hotels-catalog*/
+
+.hotel-catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.hotel-list {
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+}
+
+.hotel-item {
+  display: block;
+  width: 340px;
+  list-style-type: none;
+  margin-right: 20px;
+  align-content: space-between;
+  margin-bottom: 20px;
+  padding: 0;
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.hotel-link {
+text-decoration: none;
+color: #000000;
+}
+
+.hotel-item .button {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
+  background-color: #f2f2f2;
+  width: 140px;
+  text-align: center;
+
+}
+
+.pogination-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.pogination-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pogination-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pogination-link-current {
+  color: #000000;
+  background-color:#f2f2f2;
+}
+
+.pogination-another {
+  color: #000000;
+  background-color: inherit;
+
+}
+/*Catalog-subscribe*/
+
+.catalog-subscribe {
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
