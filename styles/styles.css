@@ -209,7 +209,6 @@ body {
   margin: 0;
   padding: 0;
 
-
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -391,22 +390,11 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 /*Hotels-catalog*/
 
-.hotel-catalog-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-
-
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-}
 
 .catalog-title {
   font-weight: 700;
@@ -419,25 +407,29 @@ body {
 
 .hotel-list {
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .hotel-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
 }
+
 
 .hotel-item {
   display: block;
   width: 340px;
   list-style-type: none;
-  margin-right: 20px;
-  align-content: space-between;
   margin-bottom: 20px;
   padding: 0;
-
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
