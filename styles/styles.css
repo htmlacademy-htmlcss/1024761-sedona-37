@@ -157,63 +157,64 @@ body {
 
 /*Advantages*/
 
+.advantages {
+  text-align: center;
+
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-describe {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .advantages-list {
   display: flex;
-  width: 1200px;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+    outline-offset: -5px;
 }
 
-.advantages {
-  text-align: center;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.title-text {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color:#000000;
-
-}
-
-.item-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.title-white-color {
-  color:#ffffff;
+.advantages-item-wide {
+  width: 100%;
   background-color: #82B3D3;
-}
-
-.item-white-color {
-  color:#ffffff;
-  background-color: #82B3D3;
-}
-
-.item-block {
-  display: block;
-  width: 400px;
-  height: 385px;
-  margin: 0;
-  padding: 0;
+  color:#FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+    outline-offset: -5px;
 }
 
+.advantages-item-container {
+width: 230px;
+min-height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+padding: 90px 85px;
+margin-top: auto;
+margin-bottom: auto;
 
+
+outline: 5px solid rgba(255, 99, 78, 0.5);
+outline-offset: -5px;
+}
+
+.advantages-item-wide-reverse {
+  flex-direction: row-reverse;
+}
 /*Invitation*/
 
 .invitation {
@@ -383,6 +384,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  padding-top: 35px;
 
 }
 
@@ -393,6 +398,13 @@ body {
   margin: 0;
 }
 
+.catalog-filter {
+  display: flex;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 /*Hotels-catalog*/
 
 
