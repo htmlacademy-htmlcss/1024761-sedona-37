@@ -95,7 +95,7 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 550px;
+    width: 507px;
     flex-wrap: wrap;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -145,6 +145,7 @@ body {
   background-size: cover;
   background-position: center bottom;
   background-color: #000000;
+  margin-bottom: 69px;
 }
 
 
@@ -159,7 +160,12 @@ body {
 
 .advantages {
   text-align: center;
+}
 
+.advantages-wrapper {
+  padding-right: 274px;
+  padding-left: 274px;
+  padding-bottom: 44px;
 }
 
 .advantages-title {
@@ -168,11 +174,36 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 25px;
+
 }
 
 .advantages-describe {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 0;
+}
+
+.advantages-item-wide .advantages-item-title {
+  color: #FFFFFF;
+}
+
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 62px;
+  }
+
+.advantages-item-describe {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+
 }
 
 .advantages-list {
@@ -215,6 +246,7 @@ outline-offset: -5px;
 .advantages-item-wide-reverse {
   flex-direction: row-reverse;
 }
+
 /*Invitation*/
 
 .invitation {
