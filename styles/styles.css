@@ -250,31 +250,51 @@ outline-offset: -5px;
 /*Invitation*/
 
 .invitation {
-  line-height: 21px;
-  color: #333333;
-  font-weight: 400;
   text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.invitation-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.invitation-description {
+  margin: 0;
 }
 
 .invitation-list-wropper {
   display: flex;
   margin: 0 auto;
   list-style: none;
-
-
+  padding: 0;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
-.invitation-item {
-  max-width: 400px;
+.invitation-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
-.invitation-list {
-  padding: 0;
+.invitation-item-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
 }
 
 .item-hause {
@@ -293,15 +313,38 @@ outline-offset: -5px;
   background-repeat: no-repeat;
   background-color: rgba(131, 79, 211, 0.1);
 }
+
+.invitation-non-list {
+  padding: 64px 350px;
+}
+
+.invitation-item {
+  padding: 81px 85px;
+}
 /*Search*/
 
+
 .search {
+  padding: 93px 304px;
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.search-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  color: #333333;
-
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .search-button {
@@ -327,6 +370,7 @@ outline-offset: -5px;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+  padding: 96px 250px;
 }
 
 
@@ -339,19 +383,29 @@ outline-offset: -5px;
   font-size: 16px;
   line-height: 20px;
   font-family: inherit;
+  margin-bottom: 104px;
 }
 
-.button-reset {
-  font-family: inherit;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
 
-.index-subscribe-title {
+.subscribe-title {
   color:#ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 54px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 /*Footer*/
@@ -402,7 +456,14 @@ outline-offset: -5px;
   outline-offset: -5px;
 }
 
-
+.button-reset {
+  font-family: inherit;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 /*Catalog-page*/
 
 /*Filter*/
