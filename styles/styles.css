@@ -677,8 +677,7 @@ color: inherit;
 
 
 .hotel-item {
-  display: block;
-  width: 340px;
+    width: 340px;
   list-style-type: none;
   margin-bottom: 20px;
   padding: 20px;
@@ -686,6 +685,10 @@ color: inherit;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
+}
+
+.hotel-item:nth-child(4n) {
+  margin-bottom: 0;
 }
 
 .hotel-image {
@@ -725,19 +728,32 @@ color: #000000;
   outline-offset: -5px;
 }
 
+.pogination-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.pogination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pogination-link {
-  text-decoration: none;
+  display: flex;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   color: #FFFFFF;
   background-color:#82B3D3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-}
-
-.pogination-item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  text-decoration: none;
+  justify-content: center;
 }
 
 .pogination-link-current {
