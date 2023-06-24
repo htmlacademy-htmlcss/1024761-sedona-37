@@ -68,6 +68,7 @@ body {
     line-height: 24px;
     text-align: center;
     color: #000000;
+    padding: 0;
   }
 
   .logo {
@@ -84,7 +85,8 @@ body {
   .novigation {
     display: flex;
     width: 1060px;
-    margin: 0 auto; /*Надо ли тут писать это свойство? Контейнер и так на всю ширину страницы*/
+    margin: 0 auto;
+    justify-content: space-between;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -102,40 +104,47 @@ body {
     outline-offset: -5px;
   }
 
-  .novigation-user {
-    width: 350px;
-    margin-left: auto;
+  .novigation-user-list {
+    display: flex;
+    width: 268px;
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto;
+    justify-content: flex-end;
   }
 
-
-  .novigation-user .novigation-link {
-    min-width: 44px;
-    min-height: 64px;
-  }
 .novigation-link {
   display: block;
-  padding: 16px 20px;
   line-height: 24px;
   font-size: 20px;
   color: #000000;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  padding: 20px 16px;
 }
 
-.novigation-item-heart {
-  color: #ffffff;
-  background-color: #7DB54F;
+.novigation-user .novigation-link {
+  padding: 0;
+  min-width: 44px;
+  min-height: 64px;
 }
-
 .novigation-button {
   color:#FFFFFF;
   background-color: #756157;
-  padding: 8px 34px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+
+}
+
+.novigation-user-item-heart {
+  margin-right: 20px;
+}
+
+.novigation-button {
+  padding: 8px 50px;
 }
   /*Section hero*/
 
@@ -581,36 +590,70 @@ color: inherit;
   width: 1060px;
   margin-bottom: 40px;
   align-items: center;
+  justify-content: space-between;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
-.button-view {
-  margin-left: auto;
+.title-select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+
+}
+
+.button-view-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.button-view-item {
   width: 48px;
   height: 48px;
+  margin-right: 8px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
-}
 
-.button-icon-link {
-  width: 100%;
-  height: 100%;
+  }
+
+  .button-view-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+.button-view-link {
+  padding: 14px 12px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
+
 .catalog-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 40px;
+  margin: 0;
 
 }
 
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 14px 20px;
+  margin-right: 70px;
+
+  border-radius: 4px;
+  border: 2px solid var(--forms-elements-1, #E5E5E5);
+
+}
 .hotel-list {
   padding: 0;
   display: flex;
@@ -628,7 +671,9 @@ color: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
+  padding: 16px;
+
+  }
 
 
 .hotel-item {
@@ -636,10 +681,15 @@ color: inherit;
   width: 340px;
   list-style-type: none;
   margin-bottom: 20px;
-  padding: 0;
+  padding: 20px;
+  box-sizing: border-box;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
+}
+
+.hotel-image {
+  padding-bottom: 16px;
 }
 
 .hotel-link {
