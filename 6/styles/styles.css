@@ -31,6 +31,7 @@ body {
 
   .main-index {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 
   .page-container {
@@ -68,6 +69,19 @@ body {
     line-height: 24px;
     text-align: center;
     color: #000000;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .novigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .logo {
@@ -76,18 +90,7 @@ body {
     margin-right: 30px;
     width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
 
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 
-  }
-
-  .novigation {
-    display: flex;
-    width: 1060px;
-    margin: 0 auto; /*Надо ли тут писать это свойство? Контейнер и так на всю ширину страницы*/
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
   }
 
   .novigation-list {
@@ -97,46 +100,53 @@ body {
     list-style-type: none;
     width: 550px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-  .novigation-user {
-    width: 350px;
-    margin-left: auto;
+  .novigation-user-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
   }
 
-
-  .novigation-user .novigation-link {
-    min-width: 44px;
-    min-height: 64px;
-  }
 .novigation-link {
   display: block;
-  padding: 16px 20px;
   line-height: 24px;
   font-size: 20px;
   color: #000000;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  padding: 20px 16px;
 }
 
-.novigation-item-heart {
-  color: #ffffff;
-  background-color: #7DB54F;
+.novigation-user .novigation-link {
+  padding: 0;
+  min-width: 44px;
+  min-height: 64px;
 }
-
 .novigation-button {
   color:#FFFFFF;
   background-color: #756157;
-  padding: 8px 34px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 20px;
+
 }
+
+.novigation-user-item-heart {
+  margin-right: 20px;
+}
+
+
   /*Section hero*/
 
 .hero {
@@ -245,6 +255,18 @@ outline-offset: -5px;
 
 .advantages-item-wide-reverse {
   flex-direction: row-reverse;
+}
+
+.item-color {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-color-2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.item-color-3 {
+  background-color: rgba(131, 179, 211, 1);
 }
 
 /*Invitation*/
@@ -370,7 +392,7 @@ outline-offset: -5px;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
-  padding: 96px 250px;
+  padding: 104px 258px;
 }
 
 
@@ -380,11 +402,10 @@ outline-offset: -5px;
   padding: 8px 50px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   font-family: inherit;
-  margin-bottom: 104px;
-}
+  }
 
 
 .subscribe-title {
@@ -500,10 +521,6 @@ outline-offset: -5px;
 
 /*Catalog-page*/
 
-.main-inner {
-  margin-top: 35px;
-}
-
 /*Filter*/
 
 
@@ -520,6 +537,7 @@ outline-offset: -5px;
   padding-right: 70px;
   padding-bottom: 70px;
   padding-top: 35px;
+
 
 }
 
@@ -581,36 +599,70 @@ color: inherit;
   width: 1060px;
   margin-bottom: 40px;
   align-items: center;
+  justify-content: space-between;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
-.button-view {
-  margin-left: auto;
+.title-select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+
+}
+
+.button-view-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.button-view-item {
   width: 48px;
   height: 48px;
+  margin-right: 8px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
-}
 
-.button-icon-link {
-  width: 100%;
-  height: 100%;
+  }
+
+  .button-view-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+.button-view-link {
+  padding: 14px 12px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
+
 .catalog-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 40px;
+  margin: 0;
 
 }
 
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 14px 20px;
+  margin-right: 70px;
+
+  border-radius: 4px;
+  border: 2px solid var(--forms-elements-1, #E5E5E5);
+
+}
 .hotel-list {
   padding: 0;
   display: flex;
@@ -628,18 +680,29 @@ color: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
+  padding: 0;
+  margin: 0;
+
+  }
 
 
 .hotel-item {
-  display: block;
-  width: 340px;
+    width: 340px;
   list-style-type: none;
   margin-bottom: 20px;
-  padding: 0;
+  padding: 20px;
+  box-sizing: border-box;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
+}
+
+.hotel-item:nth-child(4n) {
+  margin-bottom: 0;
+}
+
+.hotel-image {
+  margin-bottom: 16px;
 }
 
 .hotel-link {
@@ -651,7 +714,17 @@ color: #000000;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #756157;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 8px 25px;
 }
+
+.hotel-item .button-love {
+  background-color: #82B3D3;
+}
+
 
 .rating {
   font-weight: 400;
@@ -675,19 +748,32 @@ color: #000000;
   outline-offset: -5px;
 }
 
+.pogination-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.pogination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pogination-link {
-  text-decoration: none;
+  display: flex;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   color: #FFFFFF;
   background-color:#82B3D3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-}
-
-.pogination-item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  text-decoration: none;
+  justify-content: center;
 }
 
 .pogination-link-current {
@@ -703,10 +789,29 @@ color: #000000;
 /*Catalog-subscribe*/
 
 .catalog-subscribe {
+  display: flex;
   background-color: #FFFFFF;
-  background-size: cover;
-  background-position: center bottom;
-  text-align: center;
-  font-size: 22px;
-  line-height: 26px;
-}
+  padding: 96px 258px 104px 258px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .catalog-subscribe-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  .catalog-subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 54px;
+  }
