@@ -31,6 +31,7 @@ body {
 
   .main-index {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 
   .page-container {
@@ -69,6 +70,18 @@ body {
     text-align: center;
     color: #000000;
     padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .novigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .logo {
@@ -77,19 +90,7 @@ body {
     margin-right: 30px;
     width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
 
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 
-  }
-
-  .novigation {
-    display: flex;
-    width: 1060px;
-    margin: 0 auto;
-    justify-content: space-between;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
   }
 
   .novigation-list {
@@ -99,6 +100,7 @@ body {
     list-style-type: none;
     width: 550px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -106,11 +108,11 @@ body {
 
   .novigation-user-list {
     display: flex;
-    width: 268px;
     padding: 0;
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0;
     justify-content: flex-end;
+    align-items: center;
   }
 
 .novigation-link {
@@ -146,6 +148,7 @@ body {
 .novigation-button {
   padding: 8px 50px;
 }
+
   /*Section hero*/
 
 .hero {
@@ -254,6 +257,18 @@ outline-offset: -5px;
 
 .advantages-item-wide-reverse {
   flex-direction: row-reverse;
+}
+
+.item-color {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-color-2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.item-color-3 {
+  background-color: rgba(131, 179, 211, 1);
 }
 
 /*Invitation*/
@@ -379,7 +394,7 @@ outline-offset: -5px;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
-  padding: 96px 250px;
+  padding: 104px 258px;
 }
 
 
@@ -389,11 +404,10 @@ outline-offset: -5px;
   padding: 8px 50px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   font-family: inherit;
-  margin-bottom: 104px;
-}
+  }
 
 
 .subscribe-title {
@@ -509,9 +523,6 @@ outline-offset: -5px;
 
 /*Catalog-page*/
 
-.main-inner {
-  margin-top: 35px;
-}
 
 /*Filter*/
 
@@ -529,6 +540,7 @@ outline-offset: -5px;
   padding-right: 70px;
   padding-bottom: 70px;
   padding-top: 35px;
+
 
 }
 
@@ -769,10 +781,29 @@ color: #000000;
 /*Catalog-subscribe*/
 
 .catalog-subscribe {
+  display: flex;
   background-color: #FFFFFF;
-  background-size: cover;
-  background-position: center bottom;
-  text-align: center;
-  font-size: 22px;
-  line-height: 26px;
-}
+  padding: 96px 258px 104px 258px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .catalog-subscribe-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  .catalog-subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 54px;
+  }
