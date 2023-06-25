@@ -138,6 +138,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 20px;
 
 }
 
@@ -145,9 +146,6 @@ body {
   margin-right: 20px;
 }
 
-.novigation-button {
-  padding: 8px 50px;
-}
 
   /*Section hero*/
 
@@ -523,7 +521,6 @@ outline-offset: -5px;
 
 /*Catalog-page*/
 
-
 /*Filter*/
 
 
@@ -683,7 +680,8 @@ color: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  padding: 16px;
+  padding: 0;
+  margin: 0;
 
   }
 
@@ -704,7 +702,7 @@ color: inherit;
 }
 
 .hotel-image {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .hotel-link {
@@ -716,7 +714,17 @@ color: #000000;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #756157;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 8px 25px;
 }
+
+.hotel-item .button-love {
+  background-color: #82B3D3;
+}
+
 
 .rating {
   font-weight: 400;
