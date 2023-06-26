@@ -225,7 +225,7 @@ body {
   list-style-type: none;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .advantages-item-wide {
@@ -236,7 +236,7 @@ body {
   flex-wrap: wrap;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .advantages-item-container {
@@ -266,7 +266,10 @@ outline-offset: -5px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
+.advantages-item-image {
+  object-fit: cover;
+  height: 100%;
+}
 
 /*Invitation*/
 
@@ -705,6 +708,10 @@ grid-column: 2 span;
 .hotel-link {
 text-decoration: none;
 color: #000000;
+}
+
+.hotel-price {
+  justify-self: end;
 }
 
 .hotel-item .button {
