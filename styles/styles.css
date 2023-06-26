@@ -139,6 +139,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 20px;
+  max-width: 120px;
 
 }
 
@@ -265,9 +266,7 @@ outline-offset: -5px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.item-color-3 {
-  background-color: rgba(131, 179, 211, 1);
-}
+
 
 /*Invitation*/
 
@@ -663,18 +662,36 @@ color: inherit;
   border: 2px solid var(--forms-elements-1, #E5E5E5);
 
 }
+
 .hotel-list {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  list-style-type: none;
   margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
+
+.hotel-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 20px;
+  gap: 16px 20px;
+  grid-template-rows: 212px 1fr;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.hotel-image {
+grid-column: 2 span;
+}
+.hotel-object {
+  line-height: 21px;
+}
+
 
 .hotel-title {
   font-weight: 700;
@@ -682,28 +699,8 @@ color: inherit;
   line-height: 28px;
   padding: 0;
   margin: 0;
-
+  grid-column: 2 span;
   }
-
-
-.hotel-item {
-    width: 340px;
-  list-style-type: none;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-}
-
-.hotel-item:nth-child(4n) {
-  margin-bottom: 0;
-}
-
-.hotel-image {
-  margin-bottom: 16px;
-}
 
 .hotel-link {
 text-decoration: none;
@@ -718,7 +715,7 @@ color: #000000;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 8px 25px;
+  padding: 8px 20px;
 }
 
 .hotel-item .button-love {
