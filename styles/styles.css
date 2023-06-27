@@ -77,20 +77,20 @@ body {
     display: flex;
     width: 1060px;
     margin: 0 auto;
-    justify-content: space-between;
     margin-bottom: 35px;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-  .logo {
-    display: block;
-    margin: 0 auto;
+  .novigation-logo {
+    display: flex;
     margin-right: 30px;
-    width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
+    width: 140px;
+    align-items: center;
 
-
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .novigation-list {
@@ -98,21 +98,25 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 550px;
+    width: 339px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-  .novigation-user-list {
+   .novigation-user-list {
     display: flex;
     padding: 0;
     list-style-type: none;
     margin: 0;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
 .novigation-link {
@@ -124,6 +128,7 @@ body {
   text-decoration: none;
   text-align: center;
   padding: 20px 16px;
+
 }
 
 .novigation-user .novigation-link {
@@ -142,11 +147,6 @@ body {
   max-width: 120px;
 
 }
-
-.novigation-user-item-heart {
-  margin-right: 20px;
-}
-
 
   /*Section hero*/
 
