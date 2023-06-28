@@ -93,6 +93,18 @@ body {
     outline-offset: -5px;
   }
 
+  .novigation-link {
+    display: block;
+    line-height: 24px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 16px;
+
+  }
+
   .novigation-list {
     display: flex;
     margin: 0;
@@ -108,34 +120,38 @@ body {
 
    .novigation-user-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
     margin: 0;
-    justify-content: flex-end;
     align-items: center;
     margin-left: auto;
+    max-width: 268px;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-.novigation-link {
-  display: block;
-  line-height: 24px;
-  font-size: 20px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px 16px;
 
-}
-
-.novigation-user .novigation-link {
-  padding: 0;
+.novigation-link-search {
+  background-image: url(../images/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   min-width: 44px;
   min-height: 64px;
+  padding: 0;
 }
+
+.novigation-link-heart {
+  background-image: url(../images/icon-heart.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+}
+
 .novigation-button {
   color:#FFFFFF;
   background-color: #756157;
@@ -145,6 +161,8 @@ body {
   line-height: 20px;
   padding: 8px 20px;
   max-width: 120px;
+  margin-left: 20px;
+
 
 }
 
