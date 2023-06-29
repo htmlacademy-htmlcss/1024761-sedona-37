@@ -70,26 +70,41 @@ body {
     text-align: center;
     color: #000000;
     padding: 0;
-    margin-bottom: 35px;
+    margin: 0;
   }
 
   .novigation {
     display: flex;
     width: 1060px;
     margin: 0 auto;
-    justify-content: space-between;
-    margin-bottom: 35px;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-  .logo {
-    display: block;
-    margin: 0 auto;
-    margin-right: 30px;
-    width: 140px; /*Размер уже написан в разметке, нужно ли тут дублировать?*/
+  .novigation-catalog {
+    margin-bottom: 35px;
+  }
 
+  .novigation-logo {
+    display: flex;
+    margin-right: 30px;
+    width: 140px;
+    align-items: center;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+
+  .novigation-link {
+    display: block;
+    line-height: 24px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 16px;
 
   }
 
@@ -98,54 +113,62 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 550px;
+    width: 339px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
 
-  .novigation-user-list {
+   .novigation-user-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
     margin: 0;
-    justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
+    max-width: 268px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
-.novigation-link {
-  display: block;
-  line-height: 24px;
-  font-size: 20px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px 16px;
-}
 
-.novigation-user .novigation-link {
-  padding: 0;
+.novigation-link-search {
+  background-image: url(../images/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   min-width: 44px;
   min-height: 64px;
+  padding: 0;
 }
+
+.novigation-link-heart {
+  background-image: url(../images/icon-heart.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+}
+
 .novigation-button {
   color:#FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
+  font: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 20px;
-
+  padding: 8px 34px;
+  max-width: 160px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: 0;
 }
-
-.novigation-user-item-heart {
-  margin-right: 20px;
-}
-
 
   /*Section hero*/
 
@@ -224,7 +247,7 @@ body {
   list-style-type: none;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .advantages-item-wide {
@@ -235,7 +258,7 @@ body {
   flex-wrap: wrap;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+  outline-offset: -5px;
 }
 
 .advantages-item-container {
@@ -265,8 +288,9 @@ outline-offset: -5px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.item-color-3 {
-  background-color: rgba(131, 179, 211, 1);
+.advantages-item-image {
+  object-fit: cover;
+  height: 100%;
 }
 
 /*Invitation*/
@@ -378,6 +402,8 @@ outline-offset: -5px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  border-radius: 4px;
+  border: 0;
 }
 
 /*Subscribe*/
@@ -405,6 +431,8 @@ outline-offset: -5px;
   font-size: 20px;
   line-height: 36px;
   font-family: inherit;
+  border-radius: 0 4px 4px 0;
+  border: 0;
   }
 
 
@@ -663,18 +691,36 @@ color: inherit;
   border: 2px solid var(--forms-elements-1, #E5E5E5);
 
 }
+
 .hotel-list {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  list-style-type: none;
   margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
+
+.hotel-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 20px;
+  gap: 16px 20px;
+  grid-template-rows: 212px 1fr;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.hotel-image {
+grid-column: 2 span;
+}
+.hotel-object {
+  line-height: 21px;
+}
+
 
 .hotel-title {
   font-weight: 700;
@@ -682,32 +728,16 @@ color: inherit;
   line-height: 28px;
   padding: 0;
   margin: 0;
-
+  grid-column: 2 span;
   }
-
-
-.hotel-item {
-    width: 340px;
-  list-style-type: none;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-}
-
-.hotel-item:nth-child(4n) {
-  margin-bottom: 0;
-}
-
-.hotel-image {
-  margin-bottom: 16px;
-}
 
 .hotel-link {
 text-decoration: none;
 color: #000000;
+}
+
+.hotel-price {
+  justify-self: end;
 }
 
 .hotel-item .button {
@@ -718,7 +748,7 @@ color: #000000;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 8px 25px;
+  padding: 8px 20px;
 }
 
 .hotel-item .button-love {
@@ -726,7 +756,7 @@ color: #000000;
 }
 
 
-.rating {
+.button-rating {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -735,8 +765,9 @@ color: #000000;
   background-color: #f2f2f2;
   width: 140px;
   text-align: center;
-
+  display: block;
 }
+
   /*Pogination*/
 .pogination-wrapper {
   display: flex;
@@ -774,6 +805,7 @@ color: #000000;
   line-height: 36px;
   text-decoration: none;
   justify-content: center;
+  border-radius: 4px;
 }
 
 .pogination-link-current {
