@@ -70,17 +70,20 @@ body {
     text-align: center;
     color: #000000;
     padding: 0;
-    margin-bottom: 35px;
+    margin: 0;
   }
 
   .novigation {
     display: flex;
     width: 1060px;
     margin: 0 auto;
-    margin-bottom: 35px;
 
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
+  }
+
+  .novigation-catalog {
+    margin-bottom: 35px;
   }
 
   .novigation-logo {
@@ -156,14 +159,15 @@ body {
   color:#FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
+  font: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 20px;
-  max-width: 120px;
+  padding: 8px 34px;
+  max-width: 160px;
   margin-left: 20px;
-
-
+  border-radius: 4px;
+  border: 0;
 }
 
   /*Section hero*/
@@ -398,6 +402,8 @@ outline-offset: -5px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  border-radius: 4px;
+  border: 0;
 }
 
 /*Subscribe*/
@@ -425,6 +431,8 @@ outline-offset: -5px;
   font-size: 20px;
   line-height: 36px;
   font-family: inherit;
+  border-radius: 0 4px 4px 0;
+  border: 0;
   }
 
 
@@ -748,7 +756,7 @@ color: #000000;
 }
 
 
-.rating {
+.button-rating {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -757,8 +765,9 @@ color: #000000;
   background-color: #f2f2f2;
   width: 140px;
   text-align: center;
-
+  display: block;
 }
+
   /*Pogination*/
 .pogination-wrapper {
   display: flex;
@@ -796,6 +805,7 @@ color: #000000;
   line-height: 36px;
   text-decoration: none;
   justify-content: center;
+  border-radius: 4px;
 }
 
 .pogination-link-current {
