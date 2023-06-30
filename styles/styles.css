@@ -153,6 +153,22 @@ body {
   min-width: 44px;
   min-height: 64px;
   padding: 0;
+  position: relative;
+}
+
+.novigation-link-heart::after {
+content: "12";
+position: absolute;
+color: #ffffff;
+background: #7DB54F;
+border-radius: 50%;
+text-align: center;
+font-size: 10px;
+font-family: PT Sans;
+font-weight: 400;
+line-height: 10px;
+padding: 5px;
+top: 10px;
 }
 
 .novigation-button {
@@ -168,6 +184,7 @@ body {
   margin-left: 20px;
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
 }
 
   /*Section hero*/
@@ -464,6 +481,7 @@ outline-offset: -5px;
   font-family: inherit;
   border-radius: 0 4px 4px 0;
   border: 0;
+  cursor: pointer;
   }
 
 
