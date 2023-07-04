@@ -529,7 +529,9 @@ outline-offset: -5px;
   border-radius: 0 4px 4px 0;
   border: none;
   cursor: pointer;
+
   }
+
   .subscribe-button:hover {
     background-color: rgba(104, 162, 202, 1);
   }
@@ -559,6 +561,29 @@ outline-offset: -5px;
   margin-right: 90px;
 }
 
+.field {
+  margin: 0;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 400;
+  border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
+  border: none;
+  width: 452px;
+  box-sizing: border-box;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.subscribe-form {
+  display: flex;
+}
 /*Footer*/
 
 .page-footer-container {
@@ -997,6 +1022,26 @@ color: #000000;
   color: #000000;
   background-color: inherit;
 
+}
+
+.pogination-link-current:hover {
+  color: #000000;
+  background-color:#f2f2f2;
+}
+
+.pogination-link-current:active {
+  color: #000000;
+  background-color:#f2f2f2;
+}
+
+.pogination-another:hover {
+  color: #000000;
+  background-color: inherit;
+}
+
+.pogination-another:active {
+  color: #000000;
+  background-color:inherit;
 }
 /*Catalog-subscribe*/
 
