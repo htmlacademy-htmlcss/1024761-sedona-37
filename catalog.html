@@ -35,8 +35,10 @@
             </li>
 
             <li class="novigation-user-item novigation-user-item-heart">
-              <a href="#" class="novigation-link novigation-link-heart"></a>
-              <div class="novigation-user-element"><span>12</span></div>
+              <a href="#" class="novigation-link novigation-link-heart">
+                <span class="visually-hidden">Гостиниц в избранном</span>
+                <span class="novigation-user-element">12</span>
+              </a>
             </li>
 
             <li class="novigation-user-item">
@@ -71,22 +73,28 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
+                    </label>
+                  </li>
+
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                  </label>
-                </li>
-
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -116,20 +124,39 @@
             </fieldset>
 
 
-            <fieldset>
-              <p class="costs">Стоимость, <span>P:</span></p>
-              <input type="text" placeholder="от">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, <span>P:</span></legend>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" placeholder="от" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" placeholder="до" value="9000" name="max-price">
+                  </label>
+                </div>
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button type="button" class="range-toggle toggle-min">
+                      </button>
+
+                      <button type="button" class="range-toggle toggle-max">
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
             </fieldset>
 
-            <fieldset>
-              <input type="text" placeholder="до">
-            </fieldset>
+            <div class="button-wrapper">
+              <button class="button filter-button button-applay" type="submit">Применить</button>
+              <button class="button filter-button button-reset" type="reset">Сбросить</button>
+            </div>
 
-
-          <button class="subscribe-button" type="submit">Применить</button>
-          <button class="button button-reset" type="reset">Сбросить</button>
-
-        </form>
+          </form>
         </section>
 
           <!--Hotels-catalog-->
@@ -138,10 +165,12 @@
           <div class="title-select-button">
             <div class="title-select-wrapper">
               <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
+                <div class="select-sorting-type">
+                  <select class="select-control" aria-label="Сортировка">
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                  </select>
+                </div>
             </div>
 
               <ul class="button-view-list">
