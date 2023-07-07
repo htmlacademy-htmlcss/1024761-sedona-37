@@ -837,10 +837,20 @@ margin-bottom: 16px;
   box-sizing: border-box;
   font: inherit;
   appearance: textfield;
+  border-radius: 4px;
+  }
 
-
+.catalog-filter-label {
+  position: relative;
 }
 
+.catalog-filter-label span {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 20px;
+color: #aaaaaa;
+}
 .range-scale {
   position: relative;
   height: 4px;
