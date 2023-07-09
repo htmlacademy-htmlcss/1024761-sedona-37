@@ -695,6 +695,8 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #FFFFFF;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 .modal-auth {
@@ -710,12 +712,13 @@ body {
   width: 14px;
   height: 14px;
   background-color: #F2F2F2;
-  border-radius: 50%;
   border: none;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+
 }
+
 
 .modal-title {
   margin: 0;
@@ -791,7 +794,6 @@ body {
 }
 
 .count-gests-adult {
-  width: 247px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px
@@ -802,10 +804,34 @@ body {
 }
 
 .count-gests-child {
-  width: 242px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px
+}
+
+.field-count::-webkit-outer-spin-button,
+.field-count::-webkit-inner-spin-button {
+ appearance: none;
+ margin: 0;
+}
+
+.field-count {
+padding: 14px 10px;
+background-color: #F2F2F2;
+width: 111px;
+text-align: center;
+position: relative;
+box-sizing: border-box;
+border: none;
+}
+
+.button-less {
+  background-image: url("../images/minus.svg");
+
+  position: absolute;
+  top: 10px;
+
+
 }
 
       /*Catalog-page*/
