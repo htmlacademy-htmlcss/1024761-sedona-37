@@ -752,6 +752,7 @@ body {
   line-height: 21px;
   padding-left: 156px;
   padding-bottom: 23px;
+  margin: 0;
 }
 
 .date-ok {
@@ -765,6 +766,7 @@ body {
   line-height: 24px;
   font-style: inherit;
   color: #000000;
+  margin: 0;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px
@@ -793,13 +795,15 @@ body {
   justify-content: space-between;
 }
 
-.count-gests-adult {
-
+.count-gests {
+  display: flex;
+  align-items: center;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px
 }
 
 .label-title-guests {
+  margin: 0;
   margin-right: 46px;
 }
 
@@ -818,20 +822,55 @@ body {
 .field-count {
 padding: 14px 10px;
 background-color: #F2F2F2;
-width: 111px;
+width: 31px;
 text-align: center;
-position: relative;
 box-sizing: border-box;
 border: none;
+text-align: center;
+font-size: 18px;
+font-style: inherit;
+font-weight: 700;
+line-height: 20px;
 }
 
 .button-less {
   background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 48px;
+  background-position: center;
+  border: none;
+  padding: 14px 10px;
+  box-sizing: border-box;
+}
 
-  position: absolute;
-  top: 10px;
+  .button-more {
+    background-image: url("../images/plus.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 48px;
+    background-position: center;
+    border: none;
+    padding: 14px 10px;
+    box-sizing: border-box;
+}
 
+.batton-field-wrapper {
+  display: flex;
+}
 
+.modal-button {
+  border-radius: 10px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 256px;
 }
 
       /*Catalog-page*/

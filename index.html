@@ -238,41 +238,44 @@
             <form class="modal-form" method="post">
 
               <label class="label-check">
-                <span class="label-title">Дата Заезда:</span>
+                <p class="label-title">Дата Заезда:</p>
                 <input class="field-date" type="text" value="27 апреля 2020" placeholder="Укажите дату заезда" name="check-in-date">
                 <span class="date-notes">Мы не можем отправить вас в прошлое.</span>
               </label>
 
 
               <label class="label-check">
-                <span class="label-title">Дата Выезда:</span>
+                <p class="label-title">Дата Выезда:</p>
                 <input class="field-date" type="text" value="1 сентября 2023" placeholder="Укажите дату выезда" name="check-out-date">
-                <span class="date-notes date-ok">На эти даты есть свободные номера. Пока есть.</span>
+                <p class="date-notes date-ok">На эти даты есть свободные номера. Пока есть.</p>
               </label>
 
               <div class="count-gests-wrapper">
                 <label class="count-gests count-gests-adult">
-                  <span class="label-title label-title-guests">Взрослые:</span>
+                  <p class="label-title label-title-guests">Взрослые:</p>
 
+                  <div class="batton-field-wrapper">
                     <button class="button-less"></button>
                     <input class="field-count field-adult" type="number" value="2" placeholder="0" min="0" max="10" name="adult-person">
                     <button class="button-more"></button>
+                  </div>
 
                 </label>
 
                 <label class="count-gests count-gests-child">
-                  <span class="label-title label-title-guests">Дети:</span>
+                  <p class="label-title label-title-guests">Дети:</p>
 
+                  <div class="batton-field-wrapper">
                     <button class="button-less"></button>
                     <input class="field-count field-child" type="number" value="2" placeholder="0" min="0" max="10" name="child-person">
                     <button class="button-more"></button>
+                  </div>
 
                 </label>
               </div>
 
 
-              </label>
-              <batton class="modal-batton" type="submit">Найти</batton>
+              <batton class="modal-button" type="submit">Найти</batton>
             </form>
           </section>
         </div>
