@@ -676,10 +676,6 @@ body {
        /**Modal**/
 
 
-.modal-container-close {
-  display: none;
-}
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -690,7 +686,9 @@ body {
   background-color: rgba(242, 242, 242, 0.80);
 }
 
-
+.modal-container-close {
+  display: none;
+}
 
 .modal {
   position: relative;
@@ -709,13 +707,13 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 80px;
-  right: 84px;
-  width: 14px;
-  height: 14px;
+  top: 68px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 
