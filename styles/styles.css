@@ -49,7 +49,7 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
   padding: 0;
   border: 0;
   white-space: nowrap;
@@ -595,7 +595,7 @@ body {
 
 .footer-social {
   margin-left: 0;
-  max-width: 142;
+  max-width: 142px;
 }
 
 .footer-social-list {
@@ -676,6 +676,7 @@ body {
        /**Modal**/
 
 
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -704,6 +705,17 @@ body {
   box-sizing: border-box;
 }
 
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: PT Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+ }
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -716,20 +728,8 @@ body {
   border: none;
   background-repeat: no-repeat;
   cursor: pointer;
-
 }
 
-
-.modal-title {
-  margin: 0;
-  margin-bottom: 64px;
-  font-family: PT Sans;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
- }
 
 .label-check {
   display: flex;
@@ -766,6 +766,10 @@ body {
   padding: 0;
 }
 
+.label-title-child {
+  margin-right: 10px;
+}
+
 
 .field-date {
   width: 440px;
@@ -784,24 +788,29 @@ body {
   background-position: right 20px center;
 }
 
-.count-gests-wrapper {
+.gests-container {
   display: flex;
+  margin: 0;
   justify-content: space-between;
-  margin-bottom: 48PX;
+  margin-bottom: 48px;
 }
-
-.count-gests {
+.count-adult-gests-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   width: 247px;
- }
-
-
-.count-gests-child {
-  width: 242px;
+  margin: 0;
+  align-items: center;
 }
+
+.count-child-gests-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 242px;
+  margin: 0;
+  align-items: center;
+
+}
+
 
 .field-count::-webkit-outer-spin-button,
 .field-count::-webkit-inner-spin-button {
@@ -848,28 +857,12 @@ body {
   display: flex;
 }
 
-.modal-button {
-  border-radius: 10px;
-  background-color: #83B3D3;
-  color: #FFFFFF;
-  text-align: center;
-  font-family: PT Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 18px 256px;
-  display: block;
-}
-
 .tooltip {
   position: relative;
-  margin-top: -22px;
-  margin-left: 65px;
   width: 20px;
   height: 20px;
   display: block;
+  margin-right: 46px;
 }
 
 .tooltip-toggle {
@@ -926,6 +919,23 @@ body {
   top: -9px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.modal-button {
+  border-radius: 10px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 256px;
+  display: block;
+  text-decoration: none;
+
 }
 
 
