@@ -82,11 +82,11 @@ body {
   margin-right: 29px;
   width: 140px;
   align-items: center;
-  z-index: 1;
+  z-index: 0;
 }
 
 .logo:hover {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .index-item-current {
@@ -117,7 +117,6 @@ body {
   background-color: #756257;
 }
 
-
 .novigation-link {
   display: block;
   line-height: 24px;
@@ -132,7 +131,6 @@ body {
 .novigation-link:hover {
   color: rgba(117, 97, 87, 0.8);
 }
-
 
 .novigation-list {
   display: flex;
@@ -155,7 +153,6 @@ body {
   max-width: 269px;
   min-height: 64px;
 }
-
 
 .novigation-link-search {
   background-image: url("../images/icon-search.svg");
@@ -188,7 +185,7 @@ body {
 .novigation-user-element {
   color: #ffffff;
   font-size: 10px;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-weight: 400;
   line-height: 10px;
   padding: 5px;
@@ -226,19 +223,20 @@ body {
 }
 
 .novigation-button:hover,
-.novigation-button:focus  {
+.novigation-button:focus {
   background-color: #615048;
   color: #FFFFFF;
 }
 
 .novigation-button:active {
   background-color: #756157;
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .novigation-button:disabled {
   background-color: #E5E5E5;
 }
+
 /*Section hero*/
 
 .hero {
@@ -367,19 +365,17 @@ body {
   flex-direction: row-reverse;
 }
 
-.item-add {
-  background-color: rgba(131, 179, 211, 0.12);
-  height: 100%;
-}
-
-.item-even {
-  background-color: rgba(131, 179, 211, 0.2);
-  height: 100%;
-}
-
 .advantages-item-image {
   object-fit: cover;
   height: 100%;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 /*Invitation*/
@@ -413,7 +409,6 @@ body {
   padding: 0;
 }
 
-
 .invitation-item-title {
   font-weight: 700;
   font-size: 24px;
@@ -445,7 +440,6 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-
 
 .item-food {
   position: relative;
@@ -487,8 +481,15 @@ body {
   box-sizing: border-box;
 }
 
-/*Search*/
+.invitation-item:nth-child(even) {
+  background-color: #FFFFFF;
+}
 
+.invitation-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.1);
+}
+
+/*Search*/
 
 .search {
   padding: 96px 304px;
@@ -536,7 +537,7 @@ body {
 
 .search-button:active {
   background-color: #756157;
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-button:disabled {
@@ -591,6 +592,7 @@ body {
   background-color: #E5E5E5;
   color: #FFFFFF;
 }
+
 .subscribe-title {
   color: #ffffff;
   font-weight: 700;
@@ -736,8 +738,6 @@ body {
 
 /**Modal**/
 
-
-
 .modal-container {
   display: flex;
   position: fixed;
@@ -769,7 +769,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -884,7 +884,6 @@ body {
   width: 242px;
   margin: 0;
   align-items: center;
-
 }
 
 .field-count::-webkit-outer-spin-button,
@@ -980,7 +979,7 @@ body {
   background-color: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   color: #FFFFFF;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -996,8 +995,8 @@ body {
   z-index: 1;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
@@ -1019,7 +1018,7 @@ body {
   background-color: #83B3D3;
   color: #FFFFFF;
   text-align: center;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1174,11 +1173,11 @@ body {
   opacity: 0.6;
 }
 
-.control-input[type="checkbox"]:focus + .control-mark {
-  border: 3px solid #000000;
+.control-input[type="checkbox"]:focus+.control-mark {
+  outline: 3px solid #000000;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   position: absolute;
   content: "";
   background-image: url("../images/tick.svg");
@@ -1248,6 +1247,7 @@ body {
   border: none;
   font-weight: 700;
   line-height: 23px;
+  background-color: #F2F2F2;
 }
 
 .range-input:disabled {
@@ -1513,6 +1513,11 @@ body {
   grid-column: 2 span;
 }
 
+.hotel-title-link {
+  text-decoration: none;
+  color: #333333;
+}
+
 .hotel-link {
   text-decoration: none;
   color: #000000;
@@ -1685,7 +1690,7 @@ body {
 
 .pogination-another:hover,
 .pogination-another:focus,
-.pogination-another:active   {
+.pogination-another:active {
   background-color: #FFFFFF;
 }
 
